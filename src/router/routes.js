@@ -8,6 +8,7 @@ const routes = [
     ]
   },
   {path: '/register', component: () => import('src/pages/Authentication/Register.vue')},
+  {path: '/login', component: () => import('src/pages/Authentication/Login.vue')},
 
   // Always leave this as last one,
   // but you can also remove it
