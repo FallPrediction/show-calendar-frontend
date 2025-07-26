@@ -22,7 +22,7 @@ jobs:
           npm i -g @quasar/cli
 
       - name: Create .env file
-        run: echo "${{ vars.APP_ENV }}" > .env
+        run: echo "${{ secrets.APP_ENV }}" > .env
 
       - name: Cat .env file
         run: cat .env
