@@ -21,6 +21,9 @@ jobs:
           npm install
           npm i -g @quasar/cli
 
+      - name: Create .env file
+        run: echo "${{secrets.APP_ENV }}" > .env
+
       - name: Build
         run: quasar build
 
